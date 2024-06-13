@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logoku a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  transition: color 0.3s;
+  border: solid 1px brown;
+  padding: 5px;
+  border-radius: 10px;
+}
+nav .logoku a:hover {
+  background-color: wheat;
+  color: #1f2937;
+}
+
+nav input {
+  display: none;
+}
+
+nav .menu_bar2 {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.5rem;
+}
+
+nav .menu_bar2 span {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: brown;
+  transition: all 0.3s;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f2937;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+  border: solid 1px brown;
+  background-color: yellow;
+  border-radius: 5px;
+}
+.cv-nanda {
+  margin-top: 20px;
+  text-align: center;
+}
+.btn-cv {
+  border: solid 1px black;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #1f2937;
+  color: white;
+}
+
+.btn-cv:hover {
+  background-color: red;
+}
+
+.hero_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 5rem 1rem;
+}
+
+.contact {
+  border: solid 1px white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(44, 44, 97);
+  color: white;
+  box-shadow: 2px 5px 2px 1px rgb(44, 44, 97);
+}
+.section_con1 {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+}
+.developer {
+  text-decoration: underline;
+}
+
+.hi_there {
+  background-color: rgb(229, 239, 248);
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tebal {
+  font-weight: bold;
+}
+.italic {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #5b6c7c;
+  margin-bottom: 2rem;
+}
+.about-me {
+  text-align: center;
+}
+.skill-nanda {
+  text-align: center;
+}
+
+.sosial-media-ku {
+  font-size: 30px;
+}
+.border-sosmed {
+  border: solid 2px #1f2937;
+  border-radius: 8px;
+  padding: 4px;
+}
+.border-sosmed:hover {
+  background-color: yellow;
+}
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 1px rgb(11, 177, 168);
+  box-shadow: 5px 5px 15px 5px rgba(26, 25, 25, 0.452);
+}
+
+/*AboutMe Cssku*/
+.box-aboutme {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px black;
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.box-aboutme .about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.box-aboutme .about-text {
+  flex: 1;
+}
+
+.box-aboutme .about-text h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.box-aboutme .about-text p {
+  margin: 10px 0;
+}
+
+.box-aboutme .about-text p strong {
+  color: #555;
+}
+
+.box-aboutme .img-nanda {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.box-aboutme .img-nanda img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+.progamerPemula {
+  font-weight: bold;
+  border: solid 1px rgb(12, 12, 12);
+  padding: 5px;
+  border-radius: 10px;
+  background-color: greenyellow;
+}
+
+/* Skills css nanda2 */
+.skill-nanda2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+  padding: 20px;
+  text-align: center;
+  background-color: #2e707c;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item:hover {
+  background-color: rgb(13, 92, 92);
+  color: yellow;
+}
+
+.skill-item i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+/*Project */
+#projects {
+  padding: 40px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px black;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  margin: 10px;
+}
+
+.project-item:hover {
+  background-color: #eeeeee;
+}
+
+.project-image {
+  max-width: 40%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: solid 1px black;
+}
+
+.project-item h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.project-item p {
+  font-size: 1em;
+}
+.projectp:hover {
+  color: #2e707c;
+}
+.kontak-saya {
+  background-color: #98e8f3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px black;
+  max-width: 800px;
+  height: 200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.kontak-saya:hover {
+  background-color: #f1eded;
+}
+
+.kontak-saya button:hover {
+  background-color: red;
+}
+.footer {
+  height: 220px;
+  width: auto;
+  margin-top: 150px;
+  background-color: #1f2937;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .kontak-saya {
+    margin: 10px;
+  }
+  .skill-nanda2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .project-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  nav .menu_bar2 {
+    display: flex;
+  }
+  /* Class*/
+  .developer {
+    text-decoration: none;
+  }
+  .hi_there {
+    background-color: white;
+  }
+  .img-nanda img {
+    display: none;
+  }
+  nav ul {
+    position: absolute;
+    top: 85px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 85px);
+    background-color: rgb(235, 234, 234);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    transition: left 0.3s;
+  }
+
+  nav input:checked + .menu_bar2 + ul {
+    left: 0;
+  }
+
+  nav ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section_con1 {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
